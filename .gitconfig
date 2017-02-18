@@ -1,0 +1,12 @@
+[user]
+	name = Nikolai Alex
+	email = nikolai.alex@me.com
+[alias]
+	s = status
+	g = log --graph --abbrev-commit --pretty=oneline
+[color]
+	ui = true
+[push]
+	default = simple
+[http]
+	sslVerify = false
