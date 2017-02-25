@@ -38,3 +38,10 @@ let g:airline_right_sep = ''
 let g:airline_left_alt_sep= ''
 let g:airline_left_sep = ''
 let g:airline_theme = 'luna'
+
+inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+                        \ "\<lt>C-n>" :
+                        \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+                        \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+                        \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+imap <C-@> <C-Space>
